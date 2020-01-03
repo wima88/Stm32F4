@@ -215,16 +215,9 @@ void CAN1_RX0_IRQHandler(void)
   */
 void TIM4_IRQHandler(void)
 {
+	HAL_GPIO_WritePin(User_LED2_GPIO_Port,User_LED2_Pin,GPIO_PIN_SET);
   /* USER CODE BEGIN TIM4_IRQn 0 */
-	TxHeader.StdId = rand() % 0xF;
-	TxHeader.RTR = CAN_RTR_DATA;
-	TxHeader.IDE = CAN_ID_STD;
-	TxHeader.DLC = 2;
-	TxHeader.TransmitGlobalTime = DISABLE;
-	TxData[0] = rand() % 0xFF;
-	TxData[1] = rand() % 0xFE;
 	
-	HAL_GPIO_TogglePin(User_LED2_GPIO_Port,User_LED2_Pin);
 	if (HAL_CAN_AddTxMessage(&hcan1, &TxHeader, TxData, &TxMailbox) != HAL_OK)
 	{
 		/* Transmission request Error */
@@ -233,6 +226,8 @@ void TIM4_IRQHandler(void)
 	/* Wait transmission complete */
 	int r  = HAL_CAN_GetTxMailboxesFreeLevel(&hcan1);
 	while (HAL_CAN_GetTxMailboxesFreeLevel(&hcan1) != 3) {}
+  HAL_GPIO_WritePin(User_LED2_GPIO_Port,User_LED2_Pin,GPIO_PIN_RESET);
+
   /* USER CODE END TIM4_IRQn 0 */
   HAL_TIM_IRQHandler(&htim4);
   /* USER CODE BEGIN TIM4_IRQn 1 */

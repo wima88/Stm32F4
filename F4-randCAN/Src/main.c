@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stdlib.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,7 +49,7 @@ TIM_HandleTypeDef htim4;
 /* USER CODE BEGIN PV */
 CAN_FilterTypeDef sFilterConfig;
 CAN_TxHeaderTypeDef   TxHeader;
-uint8_t               TxData[2];
+uint8_t               TxData[8];
 uint32_t              TxMailbox;
 
 /* USER CODE END PV */
@@ -113,6 +113,16 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	TxHeader.StdId = rand() % 0xFF;
+	TxHeader.RTR = CAN_RTR_DATA;
+	TxHeader.IDE = CAN_ID_STD;
+	TxHeader.DLC = rand() % 9;
+	TxHeader.TransmitGlobalTime = DISABLE;
+	
+	for(int i=0;i<TxHeader.DLC;i++)
+	{
+		TxData[i] = rand() % 0xFF;
+	}
 
     /* USER CODE BEGIN 3 */
   }
@@ -244,7 +254,7 @@ static void MX_TIM4_Init(void)
   htim4.Instance = TIM4;
   htim4.Init.Prescaler = 35999;
   htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim4.Init.Period = 800;
+  htim4.Init.Period = 200;   // [val]/2 ~ time in ms
   htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim4.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim4) != HAL_OK)
@@ -306,7 +316,6 @@ static void MX_GPIO_Init(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-	HAL_GPIO_WritePin(User_LED_1_GPIO_Port, User_LED_1_Pin,1);
   /* User can add his own implementation to report the HAL error return state */
 
   /* USER CODE END Error_Handler_Debug */
