@@ -1,7 +1,7 @@
 Dependencies for Project 'Tmc2300DriverTest', Target 'Tmc2300DriverTest': (DO NOT MODIFY !)
 F (startup_stm32f429xx.s)(0x5E7E5733)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Tmc2300DriverTest-IC:\Users\Wimansha\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Wimansha\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "STM32F429xx SETA 1"--list startup_stm32f429xx.lst --xref -o tmc2300drivertest\startup_stm32f429xx.o --depend tmc2300drivertest\startup_stm32f429xx.d)
-F (../Src/main.c)(0x5E812012)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\BSP -I ..\Drivers\Components\ili9341 -I ..\Drivers\Components\stmpe811-I.\RTE\_Tmc2300DriverTest-IC:\Users\Wimansha\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Wimansha\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx-o tmc2300drivertest\main.o --omf_browse tmc2300drivertest\main.crf --depend tmc2300drivertest\main.d)
-I (../Inc/main.h)(0x5E8122C9)
+F (../Src/main.c)(0x5E825720)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\BSP -I ..\Drivers\Components\ili9341 -I ..\Drivers\Components\stmpe811-I.\RTE\_Tmc2300DriverTest-IC:\Users\Wimansha\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Wimansha\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx-o tmc2300drivertest\main.o --omf_browse tmc2300drivertest\main.crf --depend tmc2300drivertest\main.d)
+I (../Inc/main.h)(0x5E824F0C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5E0124B7)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5E7E572A)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5E0124B7)
@@ -37,13 +37,17 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc_ex.h)(0x5E0124B7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5E0124B7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5E0124B7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5E0124B7)
+I (..\Drivers\BSP\stm32f429i_discovery_lcd.h)(0x5E0123B6)
+I (..\Drivers\BSP\stm32f429i_discovery.h)(0x5E0123B6)
+I (..\Drivers\BSP\stm32f429i_discovery_sdram.h)(0x5E0123B6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h)(0x5E012498)
 I (..\Drivers\BSP\../Components/ili9341/ili9341.h)(0x5E0123B5)
 I (..\Drivers\BSP\../Components/ili9341/../Common/lcd.h)(0x5E81209A)
 I (..\Drivers\BSP\../Components/stmpe811/stmpe811.h)(0x5E0123B5)
 I (..\Drivers\BSP\../Components/stmpe811/../Common/ts.h)(0x5E0123B5)
 I (..\Drivers\BSP\../Components/stmpe811/../Common/io.h)(0x5E0123B5)
-F (../Src/stm32f4xx_it.c)(0x5E7E5729)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\BSP -I ..\Drivers\Components\ili9341 -I ..\Drivers\Components\stmpe811-I.\RTE\_Tmc2300DriverTest-IC:\Users\Wimansha\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Wimansha\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx-o tmc2300drivertest\stm32f4xx_it.o --omf_browse tmc2300drivertest\stm32f4xx_it.crf --depend tmc2300drivertest\stm32f4xx_it.d)
-I (../Inc/main.h)(0x5E8122C9)
+F (../Src/stm32f4xx_it.c)(0x5E825616)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\BSP -I ..\Drivers\Components\ili9341 -I ..\Drivers\Components\stmpe811-I.\RTE\_Tmc2300DriverTest-IC:\Users\Wimansha\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Wimansha\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx-o tmc2300drivertest\stm32f4xx_it.o --omf_browse tmc2300drivertest\stm32f4xx_it.crf --depend tmc2300drivertest\stm32f4xx_it.d)
+I (../Inc/main.h)(0x5E824F0C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5E0124B7)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5E7E572A)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5E0124B7)
@@ -79,6 +83,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc_ex.h)(0x5E0124B7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5E0124B7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5E0124B7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5E0124B7)
+I (..\Drivers\BSP\stm32f429i_discovery_lcd.h)(0x5E0123B6)
+I (..\Drivers\BSP\stm32f429i_discovery.h)(0x5E0123B6)
+I (..\Drivers\BSP\stm32f429i_discovery_sdram.h)(0x5E0123B6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h)(0x5E012498)
 I (..\Drivers\BSP\../Components/ili9341/ili9341.h)(0x5E0123B5)
 I (..\Drivers\BSP\../Components/ili9341/../Common/lcd.h)(0x5E81209A)
 I (..\Drivers\BSP\../Components/stmpe811/stmpe811.h)(0x5E0123B5)
@@ -86,7 +94,7 @@ I (..\Drivers\BSP\../Components/stmpe811/../Common/ts.h)(0x5E0123B5)
 I (..\Drivers\BSP\../Components/stmpe811/../Common/io.h)(0x5E0123B5)
 I (../Inc/stm32f4xx_it.h)(0x5E7E5729)
 F (../Src/stm32f4xx_hal_msp.c)(0x5E7E572A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\BSP -I ..\Drivers\Components\ili9341 -I ..\Drivers\Components\stmpe811-I.\RTE\_Tmc2300DriverTest-IC:\Users\Wimansha\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Wimansha\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F429xx -DUSE_HAL_DRIVER -DSTM32F429xx-o tmc2300drivertest\stm32f4xx_hal_msp.o --omf_browse tmc2300drivertest\stm32f4xx_hal_msp.crf --depend tmc2300drivertest\stm32f4xx_hal_msp.d)
-I (../Inc/main.h)(0x5E8122C9)
+I (../Inc/main.h)(0x5E824F0C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5E0124B7)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5E7E572A)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5E0124B7)
@@ -122,6 +130,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc_ex.h)(0x5E0124B7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5E0124B7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5E0124B7)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5E0124B7)
+I (..\Drivers\BSP\stm32f429i_discovery_lcd.h)(0x5E0123B6)
+I (..\Drivers\BSP\stm32f429i_discovery.h)(0x5E0123B6)
+I (..\Drivers\BSP\stm32f429i_discovery_sdram.h)(0x5E0123B6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h)(0x5E012498)
 I (..\Drivers\BSP\../Components/ili9341/ili9341.h)(0x5E0123B5)
 I (..\Drivers\BSP\../Components/ili9341/../Common/lcd.h)(0x5E81209A)
 I (..\Drivers\BSP\../Components/stmpe811/stmpe811.h)(0x5E0123B5)

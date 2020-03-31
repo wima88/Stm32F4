@@ -36,6 +36,10 @@ tmc2300drivertest\stm32f4xx_hal_msp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32
 tmc2300drivertest\stm32f4xx_hal_msp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 tmc2300drivertest\stm32f4xx_hal_msp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 tmc2300drivertest\stm32f4xx_hal_msp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+tmc2300drivertest\stm32f4xx_hal_msp.o: ..\Drivers\BSP\stm32f429i_discovery_lcd.h
+tmc2300drivertest\stm32f4xx_hal_msp.o: ..\Drivers\BSP\stm32f429i_discovery.h
+tmc2300drivertest\stm32f4xx_hal_msp.o: ..\Drivers\BSP\stm32f429i_discovery_sdram.h
+tmc2300drivertest\stm32f4xx_hal_msp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h
 tmc2300drivertest\stm32f4xx_hal_msp.o: ..\Drivers\BSP\../Components/ili9341/ili9341.h
 tmc2300drivertest\stm32f4xx_hal_msp.o: ..\Drivers\BSP\../Components/ili9341/../Common/lcd.h
 tmc2300drivertest\stm32f4xx_hal_msp.o: ..\Drivers\BSP\../Components/stmpe811/stmpe811.h

@@ -106,6 +106,13 @@ int main(void)
   MX_LTDC_Init();
   MX_SPI5_Init();
   /* USER CODE BEGIN 2 */
+	
+	BSP_LCD_Init();
+	BSP_LCD_LayerDefaultInit(LCD_BACKGROUND_LAYER ,LCD_FRAME_BUFFER);
+	BSP_LCD_LayerDefaultInit(LCD_FOREGROUND_LAYER ,LCD_FRAME_BUFFER);
+	BSP_LCD_SelectLayer(LCD_FOREGROUND_LAYER);
+	BSP_LCD_Clear(LCD_COLOR_BLUE);
+	BSP_LCD_DisplayOn();
 
   /* USER CODE END 2 */
 
@@ -114,7 +121,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

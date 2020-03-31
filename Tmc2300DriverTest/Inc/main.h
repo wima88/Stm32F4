@@ -29,6 +29,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
+#include "stm32f429i_discovery_lcd.h"
 #include "../Components/ili9341/ili9341.h"  
 #include "../Components/stmpe811/stmpe811.h"
 /* Private includes ----------------------------------------------------------*/

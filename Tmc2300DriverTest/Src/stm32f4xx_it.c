@@ -184,6 +184,9 @@ void PendSV_Handler(void)
 /******************************************************************************/
 
 /* USER CODE BEGIN 1 */
-
+void SysTick_Handler(void)
+{
+	HAL_IncTick();
+}
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
